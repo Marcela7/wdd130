@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap");
+
 /* Global section */
 body {
   background-color: #c0f3f8;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 /* div content */
@@ -14,8 +19,13 @@ header {
 }
 
 /* logo */
+#logo_link {
+  padding-top: 5px;
+}
+
 .logo {
   width: 80px;
+  border-radius: 35%;
 }
 
 /* Nav home */
@@ -23,6 +33,7 @@ nav a {
   text-align: center;
   color: white;
   text-decoration: none;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -42,6 +53,12 @@ nav a:hover {
 
 .home-title {
   color: #000446bc;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+#hero-msg h4 {
+  font-family: raleway;
 }
 
 .button-box {
@@ -53,12 +70,31 @@ h4 {
 }
 
 /* home grid */
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid #000446bc;
+}
+
 main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 
 .book,
@@ -66,12 +102,16 @@ main section {
   background-color: #1e00ff;
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 
 .book:hover,
 .join:hover {
   background-color: #6cfbce;
   color: #000446bc;
+  margin-top: 50px;
 }
 
 #background {
@@ -82,20 +122,29 @@ main section {
 /* msg section */
 .msg {
   background-color: #9be1ff;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #000446bc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .msg p {
   color: #000446bc;
+  font-family: raleway;
+  font-size: 0.8em;
+  padding-bottom: 15px;
 }
 
 /* footer */
 footer {
   background-color: #234bfb;
   color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
@@ -113,4 +162,8 @@ footer p {
 
 footer p a:hover {
   text-decoration: underline;
+}
+
+footer .social img {
+  padding-top: 15px;
 }
