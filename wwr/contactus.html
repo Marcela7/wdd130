@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Whitewater Rafting Vacations</title>
+    <title>Contact Us</title>
   </head>
+
   <body>
     <div id="content">
       <header>
@@ -20,7 +21,7 @@
           <a href="index.html">Home</a>
           <a href="./rivers.html">Rivers</a>
           <a href="site-plan-rafting.html">Site plan</a>
-          <a href="./contactus.html">Contact us</a>
+          <a href="contactus.html">Contact us</a>
         </nav>
       </header>
       <div id="hero">
@@ -39,76 +40,27 @@
           </div>
         </section>
       </div>
-      <main class="home-grid">
-        <section class="rivers-card">
-          <img
-            class="card-img"
-            src="images/river-in-the-forest.png"
-            alt="river in forest"
-            width="300"
-            height="350"
-          />
-          <img
-            class="icon"
-            src="images/rio-icon.png"
-            alt="river icon"
-            width="100"
-            height="100"
-          />
-          <h2>Rivers</h2>
-        </section>
-        <section class="camping-card">
-          <img
-            class="card-img"
-            src="images/camping.png"
-            alt="tent in mountains"
-            width="300"
-            height="350"
-          />
-          <img
-            class="icon"
-            src="images/fuego-icon.png"
-            alt="fire icon"
-            width="100"
-            height="100"
-          />
-          <h2>Camping</h2>
-        </section>
-        <section class="rapids-card">
-          <img
-            class="card-img"
-            src="images/apilados-canoa-playa.jpg"
-            alt="rafting boat"
-            width="300"
-            height="350"
-          />
-          <img
-            class="icon"
-            src="images/oars-icon.png"
-            alt="oars icon"
-            width="100"
-            height="100"
-          />
-          <h2>Rapids</h2>
-        </section>
-        <div id="background"></div>
-        <img
-          class="mountains"
-          src="images/misty-mountains.jpg"
-          alt="misty mountains"
-          width="650"
-          height="450"
-        />
-        <section class="msg">
-          <h2>More Than Just The Thrill</h2>
-          <p>
-            Enjoy the breathtaking scenary. From valleys, meadows, canyons, and
-            high peaks; it's way more that just the rapids. It's a great way to
-            get away from it all and relax amongst all the beauty of the great
-            outdoors
-          </p>
-          <a class="join" href="rivers.html">Join Us</a>
-        </section>
+      <main>
+        <div id="feedback"></div>
+        <form action="#" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
+          <li class="button">
+            <button type="submit">Envíe su mensaje</button>
+          </li>
+        </form>
       </main>
       <footer>
         <p>Dry Oar &copy; 2023 - Marcela Vargas</p>
@@ -142,5 +94,25 @@
         </div>
       </footer>
     </div>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
+      });
+    </script>
   </body>
 </html>
