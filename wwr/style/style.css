@@ -299,15 +299,21 @@ button {
   margin-left: 0.5em;
 }
 
+main {
+  position: relative;
+}
+
 #feedback {
   background-color: antiquewhite;
   position: absolute;
-  top: 0;
+  top: -2.5em;
+  /* bottom: 0; */
   left: 0;
   right: 0;
   padding: 0.5em;
   /* make this element invisible until we are ready for it */
   display: none;
+  text-align: center;
 }
 .moveDown {
   margin-top: 3em;
