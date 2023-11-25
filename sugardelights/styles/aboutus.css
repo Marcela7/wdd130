@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+/* nav & image */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-link {
+  padding-left: 50px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-right: 30px;
+}
+
+nav ul li {
+  margin-left: 35px;
+  margin-right: 45px;
+}
+
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav a:hover {
+  background-color: #6cfbce;
+  color: #4c1f42;
+}
+
+header {
+  background-image: url(./images/home-image-1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+
+.hero-title-about {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-title-about h1 {
+  color: white;
+  font-size: 120px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}

@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  background-image: url(./images/cake-3390301_1280.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  min-height: 100px;
+  position: relative;
+}
+
+/* Logo and Nav Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-link {
+  padding-left: 50px;
+}
+
+.logo-link:hover {
+  background: unset;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-right: 30px;
+}
+
+nav ul li {
+  margin-left: 35px;
+  margin-right: 45px;
+}
+
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+nav a:hover {
+  background-color: #6cfbce;
+  color: #4c1f42;
+}
+
+/* image and text */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* padding-top: 35px; */
+  /* padding-bottom: 45px; */
+}
+
+.hero-content {
+  grid-column: 1/3;
+  max-width: 400px;
+  margin-inline: auto;
+  padding-block: 100px;
+  margin-top: -115px;
+}
+
+.hero-title {
+  color: white;
+  font-family: Roboto Slab;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.hero-box {
+  grid-column: 4/6;
+  background-repeat: no-repeat;
+  background-position: 100px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  width: 400px;
+  transform: rotate(-6deg);
+  margin-left: -50px;
+}
+
+/* main */
+
+.main-text {
+  text-align: center;
+  color: #b7282a;
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+  font-family: Roboto Slab;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 45px;
+  color: #b7282a;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.main-img img {
+  border-radius: 15%;
+}
+
+.main-box-bullet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 22px;
+}
+
+.main-box-img {
+  display: flex;
+  align-items: center;
+}
+
+.main-box-img img {
+  margin-right: 20px;
+}
+
+/* gallery */
+.box-section-gallery {
+  background-color: #ffe8e8;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.box-title-gallery {
+  color: #b7282a;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.box-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 45px;
+}
+
+.box-gallery h4 {
+  color: #b7282a;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+/* newsletter box */
+.newsletter-box {
+  padding-bottom: 45px;
+}
+
+.newsletter-box h1 {
+  text-align: center;
+  font-size: 35px;
+  padding-top: 45px;
+  padding-bottom: 55px;
+}
+
+.newsletter-box p {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.newsletter-email {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b7282a;
+  color: white;
+  padding: 20px 30px;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 35px;
+}
+
+/* footer */
+footer {
+  background-color: #ffe8e8;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 10%;
+}
+
+.footer-nav {
+  font-family: Roboto;
+  font-size: 22px;
+  padding-left: 40px;
+}
+
+.footer-nav-link a {
+  color: #b7282a;
+}
+
+.footer-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.footer-nav-text li {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text p {
+  color: #b7282a;
+  text-align: center;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 22px;
+}
+
+.footer-contact-text {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  padding-top: 20px;
+  color: #b7282a;
+}
+
+.footer-contact-icon {
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

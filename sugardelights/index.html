@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Home Page</title>
   </head>
   <body>
     <header>
-      <a id="logo_link" href="index.html">
-        <img
-          class="logo"
-          src="././styles/images/logo-removebg-preview (2).png"
-          alt="Sugar Delights logo"
-          width="150px"
-          height="150px"
-        />
-      </a>
-      <nav>
+      <nav class="navbar">
+        <a class="logo-link" href="index.html">
+          <img
+            class="logo"
+            src="././styles/images/Cream_Beige_Modern_Cake_and_Bakery_Logo__1_-removebg-preview.png"
+            alt="Sugar Delights logo"
+          />
+        </a>
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./aboutus.html">About Us</a></li>
@@ -25,16 +29,7 @@
           <li><a href="#">Contact us</a></li>
         </ul>
       </nav>
-      <section id="hero-box">
-        <div>
-          <img
-            id="hero-img"
-            src="./styles/images/chocolateCake.jpg"
-            alt="Chocolate Cake"
-            width="300px"
-            height="200px"
-          />
-        </div>
+      <section class="hero">
         <div class="hero-content">
           <h1 class="hero-title">Handmade, with an Extra Pinch of Love</h1>
           <h4 class="hero-subtitle">
@@ -45,12 +40,12 @@
       </section>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="main-section">
+        <div class="main-text">
           <h1>Why They Choose Us?</h1>
         </div>
-        <div>
-          <div>
+        <div class="main-box">
+          <div class="main-img">
             <img
               src="./styles/images/sweet-page-image-1.jpg"
               alt="cake-section-one"
@@ -58,63 +53,76 @@
               height="300"
             />
           </div>
-          <div>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Quick delivery</h3>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Delicious taste</h3>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Great quality</h3>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Natural Ingredients</h3>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Always fresh</h3>
-            <img
-              class="card-img"
-              src="./styles/images/mollete.png"
-              alt="cupcake icon"
-              width="30"
-              height="30"
-            />
-            <h3>Diferents services</h3>
+          <div class="main-box-bullet">
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Quick delivery</h3>
+            </div>
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Delicious taste</h3>
+            </div>
+
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Great quality</h3>
+            </div>
+          </div>
+          <div class="main-box-bullet">
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Natural Ingredients</h3>
+            </div>
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Always fresh</h3>
+            </div>
+            <div class="main-box-img">
+              <img
+                class="card-img"
+                src="./styles/images/mollete.png"
+                alt="cupcake icon"
+                width="30"
+                height="30"
+              />
+              <h3>Diferents services</h3>
+            </div>
           </div>
         </div>
       </section>
-      <section>
-        <h1>Best Sellers</h1>
-        <!-- left arrow -->
-        <!-- right arrow -->
-        <div>
+      <section class="box-section-gallery">
+        <h1 class="box-title-gallery">Best Sellers</h1>
+        <div class="box-gallery">
           <div>
             <img
               src="./styles/images/home-page-image-2.jpg"
@@ -144,23 +152,30 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="newsletter-box">
         <h1>Join Our Newsletter!</h1>
-        <h3>
+        <p>
           Get freshest Sugar Delights Bakery updates and offers right to you
-          inbox! Enjoy 10% off on your birthday when you share the date with us
-        </h3>
+          inbox!
+        </p>
+        <p>Enjoy 10% off on your birthday when you share the date with us</p>
 
-        <div>
+        <div class="newsletter-email">
           <span>Enter your Email adress</span>
-          <span>arrow</span>
+          <span>
+            <img
+              src="./styles/images/flecha-correcta (1).png"
+              height="30"
+              width="30"
+            />
+          </span>
         </div>
       </section>
     </main>
 
     <footer>
-      <nav>
-        <ul>
+      <nav class="footer-nav">
+        <ul class="footer-nav-link">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./aboutus.html">About Us</a></li>
           <li><a href="./cakes&sweet.html">Cakes & Sweet</a></li>
@@ -168,16 +183,17 @@
           <li><a href="./site-plan.html">Site Plan</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="footer-text">
         <p>Have a question?</p>
         <p>We're always here to lend a helping hand.</p>
-        <p>Consumer Care Team hours are Monday-Friday, 9am - 5pm EST</p>
-      </div>
-      <div>
-        <div>
+        <p>Consumer Care Team hours are</p>
+        <p>Monday-Friday, 9am - 5pm EST</p>
+        <!-- </div> -->
+        <!-- <div class="footer-contact"> -->
+        <div class="footer-contact-text">
           <h3>Contact Us</h3>
         </div>
-        <div>
+        <div class="footer-contact-icon">
           <img
             class="card-img"
             src="./styles/images/facebook.png"
