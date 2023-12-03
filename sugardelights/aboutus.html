@@ -29,38 +29,38 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <div>
+      <section class="container">
+        <div class="container-prg">
+          <div class="title">
             <h1>Our Story</h1>
           </div>
 
-          <div>
-            <p>
+          <div class="subtitle">
+            <p class="p-1">
               The begins in 2019 on a quaint, cobblestone corner in the house
               where Sugar Delights Bakery opened its doors for the first time.
               The sweet smell of cakes and cookies and pies and pudding tumbled
               out, wafting down the streets, beckoning all in.
             </p>
-            <p>
+            <p class="p-2">
               Our red velvet cupcakes became iconic and people lined up around
               the block for our banana pudding. Sugar Delights was a destination
               for locals and tourists alike.
             </p>
-            <p>
+            <p class="p-3">
               It was time for us to open the cupboards and share our magic with
               the world. Our neighborhood bakery found its way into new
               neighborhoods near and far, we wrote cookbooks and helped people
               all over celebrate their most important moments.
             </p>
-            <p>
+            <p class="p-4">
               And while we have grown, a few things will always remain: open
               early and close late, a dollop of buttercream makes everything
               better, and our mission: make today sweeter than yesterday.
             </p>
           </div>
         </div>
-        <div>
+        <div class="con-img">
           <img
             src="./styles/images/personal-aboutus.jpg"
             alt="people"
@@ -81,23 +81,36 @@
           />
         </div>
       </section>
-      <section>
-        <h1>Contact Us</h1>
-        <form>
-          <input type="text" id="name" name="user_name" placeholder="Name" />
-          <input type="email" id="mail" name="user_mail" placeholder="Email" />
+      <section class="container-form">
+        <h1 class="title-form">Contact Us</h1>
+        <form class="form">
+          <input
+            class="field"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Name"
+          />
+          <input
+            class="field"
+            type="email"
+            id="mail"
+            name="user_mail"
+            placeholder="Email"
+          />
           <textarea
+            class="field"
             id="msg"
             name="user_message"
             placeholder="Message"
           ></textarea>
-          <button type="submit">Submit</button>
+          <button class="button" type="submit">SUBMIT</button>
         </form>
       </section>
     </main>
     <footer>
-      <nav>
-        <ul>
+      <nav class="footer-nav">
+        <ul class="footer-nav-link">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./aboutus.html">About Us</a></li>
           <li><a href="./cakes&sweet.html">Cakes & Sweet</a></li>
@@ -105,16 +118,17 @@
           <li><a href="./site-plan.html">Site Plan</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="footer-text">
         <p>Have a question?</p>
         <p>We're always here to lend a helping hand.</p>
-        <p>Consumer Care Team hours are Monday-Friday, 9am - 5pm EST</p>
-      </div>
-      <div>
-        <div>
+        <p>Consumer Care Team hours are</p>
+        <p>Monday-Friday, 9am - 5pm EST</p>
+        <!-- </div> -->
+        <!-- <div class="footer-contact"> -->
+        <div class="footer-contact-text">
           <h3>Contact Us</h3>
         </div>
-        <div>
+        <div class="footer-contact-icon">
           <img
             class="card-img"
             src="./styles/images/facebook.png"

@@ -72,3 +72,143 @@ header {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Slab", serif;
 }
+
+/* main */
+.container {
+  background-color: #ffe8e8;
+}
+
+.container-prg {
+  text-align: center;
+  margin-inline: 100px;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 24px;
+  color: #b7282a;
+  padding-block: 35px;
+}
+
+p {
+  padding-bottom: 25px;
+}
+
+.con-img {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+/* form */
+.container-form {
+  padding-block: 45px;
+  padding-inline: 200px;
+}
+
+.title-form {
+  text-align: center;
+  padding-bottom: 45px;
+  color: #b7282a;
+  font-weight: 500;
+  font-size: 52px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  background-color: #b7282a;
+  color: white;
+  border: unset;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Roboto;
+}
+
+.field::placeholder {
+  color: white;
+}
+
+.button {
+  margin-inline: 495px;
+  background-color: #b7282a;
+  color: white;
+  border: unset;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 45px;
+}
+
+/* footer */
+footer {
+  background-color: #ffe8e8;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 10%;
+}
+
+.footer-nav {
+  font-family: Roboto;
+  font-size: 22px;
+  padding-left: 40px;
+}
+
+.footer-nav-link a {
+  color: #b7282a;
+}
+
+.footer-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.footer-nav-text li {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text p {
+  color: #b7282a;
+  text-align: center;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 22px;
+}
+
+.footer-contact-text {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  padding-top: 20px;
+  color: #b7282a;
+}
+
+.footer-contact-icon {
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
