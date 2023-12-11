@@ -21,6 +21,10 @@ nav {
   padding-left: 50px;
 }
 
+.logo-link:hover {
+  background: unset;
+}
+
 .logo {
   width: 150px;
   height: 150px;
